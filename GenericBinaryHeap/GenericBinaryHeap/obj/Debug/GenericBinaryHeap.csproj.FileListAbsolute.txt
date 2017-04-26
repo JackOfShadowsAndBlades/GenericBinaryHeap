@@ -4,3 +4,8 @@ c:\users\roman\documents\visual studio 2015\Projects\GenericBinaryHeap\GenericBi
 c:\users\roman\documents\visual studio 2015\Projects\GenericBinaryHeap\GenericBinaryHeap\obj\Debug\GenericBinaryHeap.csprojResolveAssemblyReference.cache
 c:\users\roman\documents\visual studio 2015\Projects\GenericBinaryHeap\GenericBinaryHeap\obj\Debug\GenericBinaryHeap.exe
 c:\users\roman\documents\visual studio 2015\Projects\GenericBinaryHeap\GenericBinaryHeap\obj\Debug\GenericBinaryHeap.pdb
+C:\Users\Roman\Documents\GitHub\GenericBinaryHeap\GenericBinaryHeap\GenericBinaryHeap\bin\Debug\GenericBinaryHeap.exe.config
+C:\Users\Roman\Documents\GitHub\GenericBinaryHeap\GenericBinaryHeap\GenericBinaryHeap\obj\Debug\GenericBinaryHeap.exe
+C:\Users\Roman\Documents\GitHub\GenericBinaryHeap\GenericBinaryHeap\GenericBinaryHeap\obj\Debug\GenericBinaryHeap.pdb
+C:\Users\Roman\Documents\GitHub\GenericBinaryHeap\GenericBinaryHeap\GenericBinaryHeap\bin\Debug\GenericBinaryHeap.exe
+C:\Users\Roman\Documents\GitHub\GenericBinaryHeap\GenericBinaryHeap\GenericBinaryHeap\bin\Debug\GenericBinaryHeap.pdb

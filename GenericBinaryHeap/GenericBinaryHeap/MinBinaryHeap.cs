@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GenericBinaryHeap
 {
-    class MaxBinaryHeap<T> : BinaryHeap<T> where T : IComparable
+    class MinBinaryHeap<T> : BinaryHeap<T> where T : IComparable
     {
-        public MaxBinaryHeap() : base()
+        public MinBinaryHeap() : base()
         {
         }
 
@@ -19,7 +19,7 @@ namespace GenericBinaryHeap
             int parent = (i - 1) / 2;
             while (i > 0 && parent >= 0)
             {
-                if (Heap[parent].CompareTo(Heap[i]) < 0)
+                if (Heap[parent].CompareTo(Heap[i]) > 0)
                 {
                     T temp = Heap[i];
                     Heap[i] = Heap[parent];
@@ -29,21 +29,21 @@ namespace GenericBinaryHeap
                 parent = (i - 1) / 2;
             }
         }
-        
+
         void heapify(int i)
         {
             int left, right;
             T temp;
             left = 2 * i + 1;
             right = 2 * i + 2;
-            if (left < HeapSize && Heap[i].CompareTo(Heap[left]) < 0)
+            if (left < HeapSize && Heap[i].CompareTo(Heap[left]) > 0)
             {
                 temp = Heap[i];
                 Heap[i] = Heap[left];
                 Heap[left] = temp;
                 heapify(left);
             }
-            if (right < HeapSize && Heap[i].CompareTo(Heap[right]) < 0)
+            if (right < HeapSize && Heap[i].CompareTo(Heap[right]) > 0)
             {
                 temp = Heap[i];
                 Heap[i] = Heap[right];
@@ -54,9 +54,9 @@ namespace GenericBinaryHeap
 
         public override T Extract()
         {
-            T MaxValue = base.Extract();
+            T MinValue = base.Extract();
             heapify(0);
-            return MaxValue;
+            return MinValue;
         }
     }
 }

@@ -11,17 +11,31 @@ namespace GenericBinaryHeap
         static void Main(string[] args)
         {
             MaxBinaryHeap<int> maxHeap = new MaxBinaryHeap<int>();
-            maxHeap.Insert(0);
-            maxHeap.Insert(1);
-            maxHeap.Insert(22);
-            maxHeap.Insert(13);
-            maxHeap.Insert(10);
-            maxHeap.Insert(31);
             maxHeap.Insert(15);
+            maxHeap.Insert(2);
+            maxHeap.Insert(22);
+            maxHeap.Insert(27);
+            maxHeap.Insert(11);
+            maxHeap.Insert(44);
+            maxHeap.Insert(16);
             maxHeap.Insert(3);
-            maxHeap.outHeap();
-            Console.WriteLine(maxHeap.Extract());
-            maxHeap.outHeap();
+            maxHeap.Insert(58);
+            Console.WriteLine(maxHeap.HeapSize);
+            Console.WriteLine();
+            Console.WriteLine(maxHeap.Extract() + "   " + maxHeap.HeapSize);
+            
+            //Console.WriteLine();
+            //MinBinaryHeap<int> minHeap = new MinBinaryHeap<int>();
+            //minHeap.Insert(0);
+            //minHeap.Insert(1);
+            //minHeap.Insert(22);
+            //minHeap.Insert(13);
+            //minHeap.Insert(10);
+            //minHeap.Insert(31);
+            //minHeap.Insert(15);
+            //minHeap.Insert(3);
+            //minHeap.outHeap();
+
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericBinaryHeap
 {
-    class BinaryHeap<T> where T: IComparable
+    abstract class BinaryHeap<T> where T: IComparable
     {
         public List<T> Heap;
 
@@ -23,6 +23,14 @@ namespace GenericBinaryHeap
         public virtual void Insert(T value)
         {
             Heap.Add(value);
+        }
+
+        public virtual T Extract()
+        {
+            T value = Heap[0];
+            Heap[0] = Heap[HeapSize - 1];
+            Heap.RemoveAt(HeapSize - 1);
+            return value;
         }
     }
 }
